@@ -2,10 +2,10 @@
    THEME COLORS - Change these to retheme
    ============================================ */
 :root {
-    --primary: #ef4444;
-    --primary-light: #f87171;
-    --accent: #f97316;
-    --bg: #0f172a;
+    --primary: #10b981;
+    --primary-light: #34d399;
+    --accent: #06b6d4;
+    --bg: #064e3b;
     --bg-card: #1e293b;
     --text: #e2e8f0;
     --text-muted: #94a3b8;

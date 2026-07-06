@@ -1,11 +1,12 @@
 # Company Website Project
 
 This is the official company website project.
+Built with HTML & CSS.
 
 ## Team
 - Tech Lead: Wang
 - Developer: XiaoMing
-- Developer: You
+- Frontend: You
 
 ## Rules
 - master is the production branch (DO NOT push directly!)
@@ -13,5 +14,8 @@ This is the official company website project.
 - Always pull latest before starting
 - All PRs need at least 1 approval
 
+## Tech Stack
+HTML5, CSS3
+
 ## Version
-v2.0 - Updated by XiaoMing
+v2.0

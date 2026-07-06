@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>Company Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Portfolio</title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
-    <h1>Welcome to Our Company</h1>
-    <p>This is the official website.</p>
-</body>
-</html>
+<nav><div class="logo">SY Research</div><div class="nav-links"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#tools">Tools</a><a href="#contact">Contact</a></div></nav>
+<div class="hero">
+    <h1>Speculative Sampling<br>&amp; Knowledge Distillation</h1>
+    <p class="subtitle">Exploring efficient inference acceleration and model compression techniques for large language models.</p>
+    <div class="tags"><span>Speculative Decoding</span><span>Draft-and-Verify</span><span>Knowledge Transfer</span><span>LLM Efficiency</span></div>
+</div>
+<section id="research"><h2>Research Directions</h2><p class="section-desc">My primary research interests:</p><div class="research-grid">
+<div class="research-card fade-in"><div class="icon">&#9889;</div><h3>Speculative Sampling</h3><p>Accelerating LLM inference using a small draft model to propose candidate tokens, verified in parallel by the target model. Achieves 2-3x speedup with identical output distributions.</p></div>
+<div class="research-card fade-in"><div class="icon">&#129504;</div><h3>Knowledge Distillation</h3><p>Compressing large teacher models into compact students by transferring soft-label distributions and intermediate representations. Building efficient draft models for speculative decoding.</p></div>
+<div class="research-card fade-in"><div class="icon">&#128279;</div><h3>Draft Model Optimization</h3><p>Using KD to produce better draft models for speculative sampling, where improved acceptance rate directly boosts decoding throughput.</p></div>
+<div class="research-card fade-in"><div class="icon">&#128640;</div><h3>Efficient LLM Serving</h3><p>Applying speculative sampling and distillation to production serving systems, reducing latency and compute costs while preserving quality.</p></div>
+</div></section>
+<section id="projects"><h2>Projects &amp; Publications</h2><p class="section-desc">Selected works and ongoing research.</p><div class="timeline">
+<div class="timeline-item fade-in"><div class="date">2026 &mdash; In Progress</div><h3>Adaptive Draft Model Selection for Speculative Decoding</h3><p>Dynamically selecting optimal draft model based on input characteristics, improving acceptance rate by 15%.</p></div>
+<div class="timeline-item fade-in"><div class="date">2026 &mdash; In Progress</div><h3>Distilling LLMs for Speculative Draft Generation</h3><p>Task-specific KD to train compact draft models maximizing token acceptance rate over perplexity minimization.</p></div>
+<div class="timeline-item fade-in"><div class="date">2025</div><h3>Survey: Efficient Inference for LLMs</h3><p>Comprehensive review of speculative sampling, quantization, pruning, and distillation for LLM acceleration.</p></div>
+</div></section>
+<section id="tools"><h2>Tech Stack</h2><p class="section-desc">Tools and frameworks I work with.</p>
+<div class="tech-stack"><span>PyTorch</span><span>Hugging Face Transformers</span><span>vLLM</span><span>DeepSpeed</span><span>CUDA</span><span>Triton</span><span>FlashAttention</span><span>Python</span><span>Git / GitHub</span><span>PyCharm</span><span>Linux</span><span>Weights &amp; Biases</span></div></section>
+<section id="contact"><h2>Contact</h2><p class="section-desc">Feel free to reach out for collaboration.</p>
+<div class="research-card fade-in" style="max-width:500px">
+<p style="margin-bottom:0.8rem"><strong>Email:</strong> <a href="mailto:your@email.com" style="color:var(--primary-light)">your@email.com</a></p>
+<p style="margin-bottom:0.8rem"><strong>GitHub:</strong> <a href="https://github.com/SY-925" style="color:var(--primary-light)">github.com/SY-925</a></p>
+<p><strong>Scholar:</strong> <a href="#" style="color:var(--primary-light)">Your Scholar Profile</a></p>
+</div></section>
+<footer><p>Built with passion. Last updated: 2026.</p><p style="margin-top:0.5rem"><a href="https://github.com/SY-925/git-tutorial">View source on GitHub</a></p></footer>
+<script>const o=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll(".fade-in").forEach(e=>o.observe(e));</script>
+</body></html>
